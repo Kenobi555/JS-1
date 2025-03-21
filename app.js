@@ -14,3 +14,22 @@ console.log(volume);
 const city = 'Moscow';
 const street = 'Новослободская';
 console.log(city + ', ' + street);
+
+//ОПЕРАТОР ПРИСВАНИВАНИЯ И СРАВНЕНИЯ
+let age = 18 + 3;
+age += 2; // age = age +2
+age -= 3; // age = age - 3
+age *= 2; // age = age * 2
+age /= 2; // age = age /2
+
+age++; // age = age + 1
+age--; // age = age - 1
+console.log(age);
+
+// Операторы сравнения
+const ilya = 25
+console.log (age > ilya);
+console.log (age >= ilya);
+console.log (age < ilya);
+console.log (age <= ilya);
+console.log (age == ilya);
