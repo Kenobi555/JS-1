@@ -47,3 +47,30 @@ a = c = 100 + 50;
 console.log(a);
 console.log(c);
 //важно понимать порядок операторов и когда они просходят с какой стороны
+
+// Типы данных 
+let d = 5;
+let e = 5.6;
+console.log(typeof d);
+console.log(typeof e);
+d = 'строка';
+console.log(typeof d);
+
+let isAdmin = d > 10;
+console.log (typeof isAdmin);
+
+let f;
+console.log (typeof f);
+f = 4
+console.log (typeof f);
+
+let g = null;
+console.log (g == null);
+
+
+
+
+
+
+
+
