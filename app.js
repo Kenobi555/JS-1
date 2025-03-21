@@ -33,3 +33,17 @@ console.log (age >= ilya);
 console.log (age < ilya);
 console.log (age <= ilya);
 console.log (age == ilya);
+
+//Порядок операторов
+const isSuited = 100 - 10 > 90 - 5;
+console.log(isSuited);
+//100 - (12 пр-т) 10 > (10 пр-т) 90 - (12 пр-т) 5
+const b = 6 + 10 / 2
+console.log (b);
+
+let a;
+let c;
+a = c = 100 + 50;
+console.log(a);
+console.log(c);
+//важно понимать порядок операторов и когда они просходят с какой стороны
