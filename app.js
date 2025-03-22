@@ -67,7 +67,23 @@ console.log (typeof f);
 let g = null;
 console.log (g == null);
 
+//Шаблонные строки
+const projectName = 'сайт магазина';
+const price = 2000;
+const author = 'Василий Пупочкин';
 
+const template = author + 'заказал' + projectName + ' по цене ' + price + ' $';
+console.log(template)
+//такую вставку длинных строк можно реализовать с помощью шаблонных строк
+const template2 = `${author} заказал ${projectName} по цене ${price} $`;
+console.log(template2);
+
+const template3 = 'Проект \n' + 'Цена: ' + price + ' $';
+console.log(template3);
+
+const template4 = `Проект
+Цена: ${price} $`;
+console.log(template4);
 
 
 
