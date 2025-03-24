@@ -85,6 +85,26 @@ const template4 = `Проект
 Цена: ${price} $`;
 console.log(template4);
 
+//Преобразование типов
+
+const vozrast = '18';
+console.log(Number(vozrast) + 5); //вызов явной конвертации типов
+console.log(vozrast - 3); //неявное преобразование типов
+//как только JS видит плюс, он начинает конкатенацию,если минус или деление или умножение
+//он понимает что это математич операция
+
+const imya = 'Вася';
+console.log(Number(imya) + 5);
+//NaN - not a number
+console.log(typeof NaN);
+console.log(String(4) + 7);
+console.log(Boolean(123)) //все числа, кроме 0 - true
+//Если пустая строка - false
+
+const v = 2 + '10'; // 210
+console.log(v - 10); //получится 200
+
+
 
 
 
