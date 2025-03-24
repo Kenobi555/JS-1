@@ -104,6 +104,17 @@ console.log(Boolean(123)) //все числа, кроме 0 - true
 const v = 2 + '10'; // 210
 console.log(v - 10); //получится 200
 
+//False из других типов
+
+console.log(Boolean(0));//false
+console.log(Boolean(''));//false
+console.log(Boolean(undefined));//false
+console.log(Boolean(null));//false
+
+console.log(Boolean(Number('sx')));//false
+//что мы получаем
+console.log(Boolean(NaN));//false
+
 
 
 
