@@ -42,6 +42,59 @@ if (q === 7) {
     console.log('Угадал не строго')
 };
 
+//switch statement
+
+const role = 'ceo';
+
+if (role === 'manager') {
+    console.log('Менеджер')
+} else if (role === 'admin') {
+    console.log('Админ')
+} else if (role === 'ceo') {
+    console.log('СЕО')
+} else {
+    console.log('Мы тебя не знаем')
+};
+
+switch (role) {
+    case 'manager': // role === 'manager
+        console.log('Менеджер');
+        break;
+    case 'admin': //role === 'admin
+        console.log('Админ');
+        break;
+    case 'ceo':
+        console.log('Сео');
+        break;
+    default:
+        console.log('мы тебя не знаем');
+};
+
+switch (role) {
+    case 'manager': // role === 'manager
+    case 'admin': //role === 'admin
+        console.log('Не руководитель');
+        break;
+    case 'ceo':
+        console.log('Руководитель');
+        break;
+    default:
+        console.log('мы тебя не знаем');
+};
+
+const num = 1;
+
+switch(true) {
+    case num > 0: //true === num > 0
+        console.log('Положительный');
+        break;
+    case num < 0:
+        console.log('Отрицательный');
+        break;
+    default:
+        console.log('Ноль');
+}
+
 
 
 
