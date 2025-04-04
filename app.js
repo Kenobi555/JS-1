@@ -95,7 +95,23 @@ switch(true) {
         console.log('Ноль');
 }
 
+//Тернарные операторы
+const bmwX3Price = 100000;
+const budget = 20000;
 
+let message;
+if (budget > bmwX3Price) {
+    message = 'BMW';
+} else {
+    message = 'Велосипед';
+}
+
+console.log (`Я хочу купить ${message}`); //неправильный вариант, скоуп видимости переменной
+//для этого есть более краткая запись
+const stroka = -3 > 0 ? ('Больше нуля') : ('Не больше нуля');
+console.log (stroka);
+//правильный вариант для нашей записи
+console.log (`Я хочу купить ${budget > bmwX3Price ? 'BMW' : 'Велосипед'}`);
 
 
 
