@@ -114,6 +114,22 @@ console.log (stroka);
 //правильный вариант для нашей записи
 console.log (`Я хочу купить ${budget > bmwX3Price ? 'BMW' : 'Велосипед'}`);
 
+//Булева логика
+//логические операторы
+
+const isAdmin = false;
+const canWrite = true;
+console.log(`Системный файл ${isAdmin && canWrite}`); //оператор И - может записать файл если он админ и может записать
+console.log(`Обычный файл ${isAdmin || canWrite}`); //оператор ИЛИ - либо если админ, либо может записать
+console.log(`Инвертируем права админа ${!isAdmin}`);//оператор NOT
+
+const isEdited = true;
+const superAdmin = true;
+console.log(`Системный файл с редактированием ${
+    isAdmin && canWrite && (!isEdited || superAdmin)
+}`);
+
+
 
 
 
