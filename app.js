@@ -129,6 +129,20 @@ console.log(`Системный файл с редактированием ${
     isAdmin && canWrite && (!isEdited || superAdmin)
 }`);
 
+//операторы с другими типами
+console.log('Вася' || 'Олег'); // Выведется первый операнд
+console.log(false || 'Олег'); // Выведется второе (тру)
+console.log('Вася' && 'Олег'); // выведет 2 операнд если первое тру
+
+let namie = 'Марина';
+const username = namie || 'Петя'
+console.log(username);
+
+const isAddmin = true;
+const fileNamee = isAddmin && 'file.mp4';
+console.log(fileNamee);
+
+
 
 
 
