@@ -142,6 +142,11 @@ const isAddmin = true;
 const fileNamee = isAddmin && 'file.mp4';
 console.log(fileNamee);
 
+//Оператор нулевого слияния
+let uzer = '';
+console.log(uzer || 'Default user');
+console.log(uzer ?? 'Default user'); //нулевой оператор (nullish coalescing)
+
 
 
 
