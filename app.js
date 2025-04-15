@@ -146,8 +146,24 @@ console.log(fileNamee);
 let uzer = '';
 console.log(uzer || 'Default user');
 console.log(uzer ?? 'Default user'); //нулевой оператор (nullish coalescing)
+//Используется для пустой строки или нуля
 
 
+//Функции
+
+function logName (name, surname) {
+    console.log(`Мое имя - ${name} ${surname}`);
+}
+logName('Илья', 'Кеноби');
+// const imya = logName();
+// console.log(typeof imya);
+
+function countDepositSum (deposit, month, rate) {
+    const sum = deposit * (1 + rate / 12)  ** month;
+    return sum;
+}
+const example = countDepositSum(1000, 24, 0.12);
+console.log(example);
 
 
 
