@@ -196,6 +196,22 @@ const poft = num => {
 
 console.log(poft(12));
 
+//Cложные функции - обычные, простые - стрелочные!!!
+
+
+//Упражнение - перобразование обычной ф-и в стрелочную
+function toPower(num, power) {
+    const res = num ** power;
+    return res;
+}
+
+console.log(toPower(2, 3));
+
+const toPowerArrow = (num, power) => 
+    num ** power;
+
+console.log(toPowerArrow(2,3));
+
 
 
 
