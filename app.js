@@ -180,6 +180,21 @@ const pot = function (num) {
 }
 console.log(pot(6));
 
+//Стрелочные функции
+function powerOfTwoo (num) {
+    return num * num;
+}
+console.log(powerOfTwoo(4));
+
+// const poft = num => num * num;
+// console.log(poft(3)); 
+
+const poft = num => {
+    console.log(num);
+    return num * num;
+}
+
+console.log(poft(12));
 
 
 
