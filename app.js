@@ -162,9 +162,23 @@ function countDepositSum (deposit, month, rate) {
     const sum = deposit * (1 + rate / 12)  ** month;
     return sum;
 }
+//Можно сделать проще:
+//function countDepositSum (deposit, month, rate) {
+    //return deposit * (1 + rate / 12)  ** month;
 const example = countDepositSum(1000, 24, 0.12);
 console.log(example);
 
+//Анонимные функции
+function powerOfTwo (num) {  // Можно поместить в начало консоллог, и все равно будет выполнено, всплытие
+    return num * num;
+}
+console.log(powerOfTwo(5));
+
+//мы можем поместить ф-ю в переменную и сделать ее анонимной
+const pot = function (num) {
+    return num * num;
+}
+console.log(pot(6));
 
 
 
